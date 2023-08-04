@@ -1,0 +1,23 @@
+<div>
+    <h1>
+        {{#if product}}
+        <div>
+            <p>Name: {{product.name}}</h2>
+            <p>Description: {{product.description}}</p>
+            <p>Price: {{product.price}}</p>
+            <p>Category: {{product.category}}</p>
+            <img>Image: {{product.thumbnail}}</img>
+            <p>stock: {{product.stock}}</p>
+            <p>ID: {{product._id}}</p>
+            <!--Sin funcinar por el momento. Ver por que rompe-->
+            <button class="addProductButton" data-product-id={{product._id}} id="addProductButton">Agregar al
+                carrito</button>
+        </div>
+        {{/if}}
+    </h1>
+    <a href="/products"> ir a productos</a>
+    <a href="/carts"> ir a carrito</a>
+</div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script type="module" src="/main.js"></script>
